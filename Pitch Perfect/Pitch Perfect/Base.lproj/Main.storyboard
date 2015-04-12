@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="796.5" y="-401"/>
         </scene>
-        <!--Play Sounds View Controller-->
+        <!--View Controller-->
         <scene sceneID="BPr-Gt-TCl">
             <objects>
-                <viewController id="Wix-wp-9v5" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wix-wp-9v5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ezw-W1-Opx"/>
                         <viewControllerLayoutGuide type="bottom" id="1L3-vK-p5F"/>
@@ -262,19 +262,19 @@
                                 <exclude reference="nAE-0P-El9"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="qLs-Bf-5RK"/>
+                                <exclude reference="FRa-XU-bQZ"/>
+                                <exclude reference="s6M-3G-2dS"/>
                                 <exclude reference="Qiv-C9-kBk"/>
                                 <exclude reference="YZh-4a-OEd"/>
                                 <exclude reference="Slb-AK-24n"/>
                                 <exclude reference="cDm-UJ-gKQ"/>
+                                <exclude reference="34g-5t-bsh"/>
                                 <exclude reference="Fx6-Cl-lzg"/>
                                 <exclude reference="kYB-su-a8O"/>
-                                <exclude reference="FRa-XU-bQZ"/>
-                                <exclude reference="s6M-3G-2dS"/>
                                 <exclude reference="1cw-Ez-p1t"/>
                                 <exclude reference="Hhd-cY-Zko"/>
                                 <exclude reference="QlR-PL-A2z"/>
-                                <exclude reference="34g-5t-bsh"/>
-                                <exclude reference="qLs-Bf-5RK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -287,19 +287,19 @@
                                 <include reference="nAE-0P-El9"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="qLs-Bf-5RK"/>
+                                <include reference="FRa-XU-bQZ"/>
+                                <include reference="s6M-3G-2dS"/>
                                 <include reference="Qiv-C9-kBk"/>
                                 <include reference="YZh-4a-OEd"/>
                                 <include reference="Slb-AK-24n"/>
                                 <include reference="cDm-UJ-gKQ"/>
+                                <include reference="34g-5t-bsh"/>
                                 <include reference="Fx6-Cl-lzg"/>
                                 <include reference="kYB-su-a8O"/>
-                                <include reference="FRa-XU-bQZ"/>
-                                <include reference="s6M-3G-2dS"/>
                                 <include reference="1cw-Ez-p1t"/>
                                 <include reference="Hhd-cY-Zko"/>
                                 <include reference="QlR-PL-A2z"/>
-                                <include reference="34g-5t-bsh"/>
-                                <include reference="qLs-Bf-5RK"/>
                             </mask>
                         </variation>
                     </view>
