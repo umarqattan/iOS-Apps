@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="796.5" y="-401"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="BPr-Gt-TCl">
             <objects>
-                <viewController id="Wix-wp-9v5" sceneMemberID="viewController">
+                <viewController id="Wix-wp-9v5" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ezw-W1-Opx"/>
                         <viewControllerLayoutGuide type="bottom" id="1L3-vK-p5F"/>
