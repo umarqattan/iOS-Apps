@@ -40,7 +40,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordingInProgress.text   = "Tap to Record"
         restartAudioButton.hidden  = true
         pauseAudioButton.hidden    = true
-        
     }
     
     @IBAction func recordAudio(sender: UIButton)
@@ -92,6 +91,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func restartRecording(sender: UIButton)
     {
+        /**
+        https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html
+        **/
         restartAudioButton.hidden  = true
         restartAudioButton.enabled = false
         pauseAudioButton.hidden    = true
@@ -105,6 +107,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func pauseRecording(sender: AnyObject)
     {
+        /**
+        https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html
+        **/
         if audioRecorder.recording
         {
             audioRecorder.pause()

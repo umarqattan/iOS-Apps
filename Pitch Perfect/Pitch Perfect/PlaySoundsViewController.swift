@@ -70,6 +70,7 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate{
     }
     func audioFX(FX: String, variable: Float)
     {
+        
         var audioPlayerNode = AVAudioPlayerNode()
         audioPlayerNode.stop()
         audioEngine.stop()
@@ -78,6 +79,7 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate{
         audioEngine.attachNode(audioPlayerNode)
         if FX == "rate" || FX == "RATE" || FX == "Rate"
         {
+            // http://stackoverflow.com/questions/25704923/using-apples-new-audioengine-to-change-pitch-of-audioplayer-sound?lq=1
             var audioUnitTime = AVAudioUnitTimePitch()
             audioUnitTime.rate = variable
             audioEngine.attachNode(audioUnitTime)
@@ -86,6 +88,7 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate{
         }
         else if FX == "pitch" || FX == "PITCH" || FX == "Pitch"
         {
+            // http://stackoverflow.com/questions/25704923/using-apples-new-audioengine-to-change-pitch-of-audioplayer-sound?lq=1
             var audioUnitPitch = AVAudioUnitTimePitch()
             audioUnitPitch.pitch = variable
             audioEngine.attachNode(audioUnitPitch)
@@ -94,6 +97,8 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate{
         }
         else if FX == "reverb" || FX == "REVERB" || FX == "Reverb"
         {
+            
+            //lines 153-160 on https://github.com/shu223/iOS8-Sampler/blob/master/iOS8Sampler/Samples/AudioEngineViewController.m
             var audioUnitReverb = AVAudioUnitReverb()
             audioUnitReverb.loadFactoryPreset(AVAudioUnitReverbPreset.Cathedral)
             audioUnitReverb.wetDryMix = variable
