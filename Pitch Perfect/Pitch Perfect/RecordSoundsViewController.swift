@@ -4,7 +4,7 @@
 //
 //  Created by Umar Qattan on 4/5/15.
 //  Copyright (c) 2015 Umar Qattan. All rights reserved.
-//  TODO: Organize restart and pause buttons using toggling
+//  TODO: Organize restart and pause buttons using pause and restart images
 
 import UIKit
 import AVFoundation
@@ -17,7 +17,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton:        UIButton!
     @IBOutlet weak var pauseAudioButton:    UIButton!
     @IBOutlet weak var restartAudioButton:  UIButton!
-    
+    var pause: UIImage = UIImage(named: "pause.png")!
+    var play : UIImage = UIImage(named: "play.png" )!
     
     var audioRecorder:AVAudioRecorder!
     var recordedAudio:RecordedAudio!
@@ -40,10 +41,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordingInProgress.text   = "Tap to Record"
         restartAudioButton.hidden  = true
         pauseAudioButton.hidden    = true
+        recordButton.enabled       = true // <-- Bug: recordButton is disabled when the view appears again.
     }
     
     @IBAction func recordAudio(sender: UIButton)
     {
+        /**
+        TODO: Fix bug where record button is still enabled when recording
+              is in progress
+        **/
         stopButton.hidden          = false
         restartAudioButton.hidden  = false
         pauseAudioButton.hidden    = false
@@ -67,6 +73,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.meteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
+        recordButton.enabled          = false // <-- Bug: recordButton is still enabled when recording is in progress
         recordingInProgress.text      = "Recording"
     }
     
@@ -113,10 +120,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         if audioRecorder.recording
         {
             audioRecorder.pause()
+            
+            recordingInProgress.text = "Paused"    // <-- Modification: Make a label to tell the user that the recording paused
+            pauseAudioButton.setImage(play, forState: UIControlState.Normal)
         }
         else
         {
             audioRecorder.record()
+            recordingInProgress.text = "Recording" // <-- Modification: Make a label to tell the user that the recording resumed
+            pauseAudioButton.setImage(pause, forState: UIControlState.Normal)
         }
     }
     
