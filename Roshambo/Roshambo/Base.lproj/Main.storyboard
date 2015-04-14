@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hns-hq-HNl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="rock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rr-O2-gq8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="paper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8H-fh-gZX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="scissors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-zy-k66">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0u3-zy-k66" secondAttribute="bottom" constant="290" id="3j2-Z8-6vC"/>
+                            <constraint firstItem="0rr-O2-gq8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="34" id="9dV-V2-Qbq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E8H-fh-gZX" secondAttribute="trailing" constant="29" id="Ivt-cP-sn5"/>
+                            <constraint firstItem="0rr-O2-gq8" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="RjI-1m-yQO"/>
+                            <constraint firstItem="0u3-zy-k66" firstAttribute="centerX" secondItem="0rr-O2-gq8" secondAttribute="centerX" id="arU-6B-rRW"/>
+                            <constraint firstItem="E8H-fh-gZX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="113" id="kgh-Ry-47u"/>
+                            <constraint firstItem="Hns-hq-HNl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="30" id="oQo-K7-s7f"/>
+                            <constraint firstItem="Hns-hq-HNl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="113" id="oc0-rp-Q2U"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Hns-hq-HNl"/>
+                                <exclude reference="0rr-O2-gq8"/>
+                                <exclude reference="E8H-fh-gZX"/>
+                                <exclude reference="0u3-zy-k66"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="arU-6B-rRW"/>
+                                <exclude reference="3j2-Z8-6vC"/>
+                                <exclude reference="9dV-V2-Qbq"/>
+                                <exclude reference="RjI-1m-yQO"/>
+                                <exclude reference="Ivt-cP-sn5"/>
+                                <exclude reference="kgh-Ry-47u"/>
+                                <exclude reference="oQo-K7-s7f"/>
+                                <exclude reference="oc0-rp-Q2U"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Hns-hq-HNl"/>
+                                <include reference="0rr-O2-gq8"/>
+                                <include reference="E8H-fh-gZX"/>
+                                <include reference="0u3-zy-k66"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="arU-6B-rRW"/>
+                                <include reference="3j2-Z8-6vC"/>
+                                <include reference="9dV-V2-Qbq"/>
+                                <include reference="RjI-1m-yQO"/>
+                                <include reference="Ivt-cP-sn5"/>
+                                <include reference="kgh-Ry-47u"/>
+                                <include reference="oQo-K7-s7f"/>
+                                <include reference="oc0-rp-Q2U"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Roshambo View Controller-->
+        <scene sceneID="R7E-I5-BHW">
+            <objects>
+                <viewController id="TKf-PL-4KA" customClass="RoshamboViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rzz-Nu-1ov"/>
+                        <viewControllerLayoutGuide type="bottom" id="KG8-bj-jBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fWy-m7-rZw">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xaO-e7-Ncg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="V6x-nd-qKC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V6x-nd-qKC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="V6x-nd-qKC"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOn-fl-FYj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Play Again!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xaO-e7-Ncg" firstAttribute="leading" secondItem="fWy-m7-rZw" secondAttribute="leadingMargin" constant="51" id="U6y-Gj-b1q"/>
+                            <constraint firstItem="KG8-bj-jBU" firstAttribute="top" secondItem="QOn-fl-FYj" secondAttribute="bottom" constant="157" id="dZG-n0-dPz"/>
+                            <constraint firstItem="xaO-e7-Ncg" firstAttribute="top" secondItem="Rzz-Nu-1ov" secondAttribute="bottom" constant="64" id="eH2-3s-DMc"/>
+                            <constraint firstItem="xaO-e7-Ncg" firstAttribute="centerX" secondItem="QOn-fl-FYj" secondAttribute="centerX" id="o6E-j9-rQg"/>
+                            <constraint firstItem="QOn-fl-FYj" firstAttribute="centerX" secondItem="fWy-m7-rZw" secondAttribute="centerX" id="shp-lX-gir"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xaO-e7-Ncg"/>
+                                <exclude reference="QOn-fl-FYj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="U6y-Gj-b1q"/>
+                                <exclude reference="eH2-3s-DMc"/>
+                                <exclude reference="o6E-j9-rQg"/>
+                                <exclude reference="shp-lX-gir"/>
+                                <exclude reference="dZG-n0-dPz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xaO-e7-Ncg"/>
+                                <include reference="QOn-fl-FYj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="U6y-Gj-b1q"/>
+                                <include reference="eH2-3s-DMc"/>
+                                <include reference="o6E-j9-rQg"/>
+                                <include reference="shp-lX-gir"/>
+                                <include reference="dZG-n0-dPz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bk-9S-am9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165.5" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
+</document>
