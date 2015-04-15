@@ -79,8 +79,8 @@
 		E1159FAD1ADC990000271982 /* Roshambo */ = {
 			isa = PBXGroup;
 			children = (
-				E1159FD01ADD8B7500271982 /* RoshamboViewController.swift */,
 				E1159FB01ADC990000271982 /* AppDelegate.swift */,
+				E1159FD01ADD8B7500271982 /* RoshamboViewController.swift */,
 				E1159FB21ADC990000271982 /* ViewController.swift */,
 				E1159FB41ADC990000271982 /* Main.storyboard */,
 				E1159FB71ADC990000271982 /* Images.xcassets */,

@@ -10,29 +10,47 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    
+    @IBAction func rockButton(sender: UIButton)
+    {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("RoshamboViewController") as! RoshamboViewController
+        if let aPlayerMove = sender.titleForState(.Normal)
+        {
+            vc.playerMove = aPlayerMove
+        }
+        presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func paperButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("playRoshambo", sender: sender)
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "playRoshambo"
+        {
+            let vc = segue.destinationViewController as! RoshamboViewController
+            if let aPlayerMove = sender?.titleForState(.Normal)
+            {
+                vc.playerMove = aPlayerMove
+            }
+        }
+    }
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    func rock()
-    {
-        /**
-        TODO:    Simulate a rock/paper/scissors game by presenting an image of
-                 the opponent's move (if you pick rock and the opponent picks
-                 paper, a picture of a rock covered with a piece of paper shou-
-                 present itself. A label under the image will read somerthing
-                 along the lines of "Paper covers rock. You lose." Afterward, 
-                 you should have the option to play again, which should take the
-                 presented view back to the originally presenting view.
-        **/
-        
-        
-        
-        
-    }
+    
+    
+    
    
+    
+    
     
 
 }
