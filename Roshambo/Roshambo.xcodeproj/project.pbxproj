@@ -13,7 +13,7 @@
 		E1159FB81ADC990000271982 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1159FB71ADC990000271982 /* Images.xcassets */; };
 		E1159FBB1ADC990000271982 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1159FB91ADC990000271982 /* LaunchScreen.xib */; };
 		E1159FC71ADC990000271982 /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1159FC61ADC990000271982 /* RoshamboTests.swift */; };
-		E1159FD11ADD8B7500271982 /* RoshamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1159FD01ADD8B7500271982 /* RoshamboViewController.swift */; };
+		E1F8D3AC1ADE4A68004E9A23 /* RoshamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8D3AB1ADE4A68004E9A23 /* RoshamboViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		E1159FC01ADC990000271982 /* RoshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1159FC51ADC990000271982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1159FC61ADC990000271982 /* RoshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboTests.swift; sourceTree = "<group>"; };
-		E1159FD01ADD8B7500271982 /* RoshamboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoshamboViewController.swift; sourceTree = SOURCE_ROOT; };
+		E1F8D3AB1ADE4A68004E9A23 /* RoshamboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoshamboViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E1159FB01ADC990000271982 /* AppDelegate.swift */,
-				E1159FD01ADD8B7500271982 /* RoshamboViewController.swift */,
+				E1F8D3AB1ADE4A68004E9A23 /* RoshamboViewController.swift */,
 				E1159FB21ADC990000271982 /* ViewController.swift */,
 				E1159FB41ADC990000271982 /* Main.storyboard */,
 				E1159FB71ADC990000271982 /* Images.xcassets */,
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1159FD11ADD8B7500271982 /* RoshamboViewController.swift in Sources */,
+				E1F8D3AC1ADE4A68004E9A23 /* RoshamboViewController.swift in Sources */,
 				E1159FB31ADC990000271982 /* ViewController.swift in Sources */,
 				E1159FB11ADC990000271982 /* AppDelegate.swift in Sources */,
 			);
