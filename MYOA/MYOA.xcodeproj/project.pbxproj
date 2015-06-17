@@ -13,6 +13,7 @@
 		E13284B51AEEE02E000E0366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13284B41AEEE02E000E0366 /* Images.xcassets */; };
 		E13284B81AEEE02E000E0366 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13284B61AEEE02E000E0366 /* LaunchScreen.xib */; };
 		E13284C41AEEE02E000E0366 /* MYOATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13284C31AEEE02E000E0366 /* MYOATests.swift */; };
+		E13284CE1AEEE5FE000E0366 /* MYOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13284CD1AEEE5FE000E0366 /* MYOAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E13284BD1AEEE02E000E0366 /* MYOATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYOATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13284C21AEEE02E000E0366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E13284C31AEEE02E000E0366 /* MYOATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYOATests.swift; sourceTree = "<group>"; };
+		E13284CD1AEEE5FE000E0366 /* MYOAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYOAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E13284B41AEEE02E000E0366 /* Images.xcassets */,
 				E13284B61AEEE02E000E0366 /* LaunchScreen.xib */,
 				E13284AB1AEEE02E000E0366 /* Supporting Files */,
+				E13284CD1AEEE5FE000E0366 /* MYOAViewController.swift */,
 			);
 			path = MYOA;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13284CE1AEEE5FE000E0366 /* MYOAViewController.swift in Sources */,
 				E13284B01AEEE02E000E0366 /* ViewController.swift in Sources */,
 				E13284AE1AEEE02E000E0366 /* AppDelegate.swift in Sources */,
 			);

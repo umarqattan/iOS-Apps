@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11EDD831AFD607700E5C72A /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EDD821AFD607700E5C72A /* Meme.swift */; };
 		E13284E01AF0077D000E0366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13284DF1AF0077D000E0366 /* AppDelegate.swift */; };
 		E13284E21AF0077D000E0366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13284E11AF0077D000E0366 /* ViewController.swift */; };
 		E13284E51AF0077D000E0366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13284E31AF0077D000E0366 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E11EDD821AFD607700E5C72A /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		E13284DA1AF0077D000E0366 /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13284DE1AF0077D000E0366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E13284DF1AF0077D000E0366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				E13284DF1AF0077D000E0366 /* AppDelegate.swift */,
 				E13284E11AF0077D000E0366 /* ViewController.swift */,
+				E11EDD821AFD607700E5C72A /* Meme.swift */,
 				E13284E31AF0077D000E0366 /* Main.storyboard */,
 				E13284E61AF0077D000E0366 /* Images.xcassets */,
 				E13284E81AF0077D000E0366 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11EDD831AFD607700E5C72A /* Meme.swift in Sources */,
 				E13284E21AF0077D000E0366 /* ViewController.swift in Sources */,
 				E13284E01AF0077D000E0366 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				E13284FB1AF0077D000E0366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E13284FC1AF0077D000E0366 /* Build configuration list for PBXNativeTarget "ImagePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				E13284FE1AF0077D000E0366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,11 +14,15 @@ class RoshamboViewController: UIViewController
     
     @IBOutlet weak var resultLabel:           UILabel!
     @IBOutlet weak var roshamboImageView: UIImageView!
+    
+    var initMatch:[String] = ["You","Opponent","Result"]
+    var match:[String] = []
+    
    
     
     var playerMove:  String!
     var opponentMove:String!
-    
+    var matchImage:[UIImage] = []
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -30,62 +34,71 @@ class RoshamboViewController: UIViewController
         super.viewWillAppear(true)
         displayResults()
     }
+    
    
-    func getOpponentMove() -> String
+    override func viewDidAppear(animated: Bool)
     {
-        var possibleMoves:[String] = ["rock", "paper", "scissors"]
-        var randomIndex:Int = Int(arc4random()%3)
-        println("The random integer is \(randomIndex)")
-        return possibleMoves[randomIndex]
+        super.viewDidAppear(true)
     }
+    
     
     func displayResults()
     {
         var possibleMoves:[String] = ["rock", "paper", "scissors"]
         var randomIndex:    Int    = Int(arc4random()%3)
-        var opponentMove:String    = possibleMoves[randomIndex]
-        if self.playerMove == opponentMove
+        self.opponentMove          = possibleMoves[randomIndex]
+        if self.playerMove == self.opponentMove
         {
             self.resultLabel.text = "It's a tie."
             self.roshamboImageView.image = UIImage(named: "itsATie")
         }
-        else if self.playerMove == "rock" && opponentMove == "paper"
+        else if self.playerMove == "rock" && self.opponentMove == "paper"
         {
             self.resultLabel.text        = "Paper covers Rock. You lose."
             self.roshamboImageView.image = UIImage(named: "PaperCoversRock")
         }
-        else if self.playerMove == "rock" && opponentMove == "scissors"
+        else if self.playerMove == "rock" && self.opponentMove == "scissors"
         {
             self.resultLabel.text       = "Rock crushes Scissors. You win!"
             self.roshamboImageView.image = UIImage(named: "RockCrushesScissors")
         }
-        else if self.playerMove == "paper" && opponentMove == "rock"
+        else if self.playerMove == "paper" && self.opponentMove == "rock"
         {
             self.resultLabel.text      = "Paper covers Rock. You win!"
             self.roshamboImageView.image = UIImage(named: "PaperCoversRock")
         }
-        else if self.playerMove == "paper" && opponentMove == "scissors"
+        else if self.playerMove == "paper" && self.opponentMove == "scissors"
         {
             self.resultLabel.text       = "Scissors cut Paper. You lose!"
             self.roshamboImageView.image = UIImage(named: "ScissorsCutPaper")
         }
-        else if self.playerMove == "scissors" && opponentMove == "rock"
+        else if self.playerMove == "scissors" && self.opponentMove == "rock"
         {
             self.resultLabel.text       = "Rock crushes Scissors. You lose!"
             self.roshamboImageView.image = UIImage(named: "RockCrushesScissors")
         }
-        else if self.playerMove == "scissors" && opponentMove == "paper"
+        else if self.playerMove == "scissors" && self.opponentMove == "paper"
         {
             self.resultLabel.text       = "Scissors cut Paper. You win!"
             self.roshamboImageView.image = UIImage(named: "ScissorsCutPaper")
         }
     }
-
+    /**
+    @IBAction func showHistory(sender: UIButton)
+    {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("HistoryViewController") as! HistoryViewController
+        vc.matchImage.append(self.roshamboImageView.image!)
+        vc.match.append(self.playerMove)
+        println("My move was \(self.playerMove) and my opponent's move was \(self.opponentMove)")
+        vc.match.append(self.opponentMove)
+        println("\(vc.match[0]) and \(vc.match[1])")
+        presentViewController(vc, animated: true, completion: nil)
+        
+    }
+    **/
     @IBAction func playAgain()
     {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
     
 }

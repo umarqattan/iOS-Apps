@@ -13,6 +13,8 @@
 		E1159FB81ADC990000271982 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1159FB71ADC990000271982 /* Images.xcassets */; };
 		E1159FBB1ADC990000271982 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1159FB91ADC990000271982 /* LaunchScreen.xib */; };
 		E1159FC71ADC990000271982 /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1159FC61ADC990000271982 /* RoshamboTests.swift */; };
+		E15E67151AE7512000E7C32F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15E67141AE7512000E7C32F /* HistoryViewController.swift */; };
+		E15E67171AE75B3000E7C32F /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15E67161AE75B3000E7C32F /* HistoryCell.swift */; };
 		E1F8D3AC1ADE4A68004E9A23 /* RoshamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8D3AB1ADE4A68004E9A23 /* RoshamboViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		E1159FC01ADC990000271982 /* RoshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1159FC51ADC990000271982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1159FC61ADC990000271982 /* RoshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboTests.swift; sourceTree = "<group>"; };
+		E15E67141AE7512000E7C32F /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		E15E67161AE75B3000E7C32F /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		E1F8D3AB1ADE4A68004E9A23 /* RoshamboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoshamboViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,8 @@
 			children = (
 				E1159FB01ADC990000271982 /* AppDelegate.swift */,
 				E1F8D3AB1ADE4A68004E9A23 /* RoshamboViewController.swift */,
+				E15E67141AE7512000E7C32F /* HistoryViewController.swift */,
+				E15E67161AE75B3000E7C32F /* HistoryCell.swift */,
 				E1159FB21ADC990000271982 /* ViewController.swift */,
 				E1159FB41ADC990000271982 /* Main.storyboard */,
 				E1159FB71ADC990000271982 /* Images.xcassets */,
@@ -218,6 +224,8 @@
 				E1F8D3AC1ADE4A68004E9A23 /* RoshamboViewController.swift in Sources */,
 				E1159FB31ADC990000271982 /* ViewController.swift in Sources */,
 				E1159FB11ADC990000271982 /* AppDelegate.swift in Sources */,
+				E15E67151AE7512000E7C32F /* HistoryViewController.swift in Sources */,
+				E15E67171AE75B3000E7C32F /* HistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,3 +7,28 @@
 //
 
 import Foundation
+import UIKit
+
+class MYOAViewController: UIViewController
+{
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start Over", style: .Plain, target: self, action: "startOver")
+        
+    }
+    
+    func startOver()
+    {
+        if let navigationViewController = self.navigationController
+        {
+            navigationViewController.popToRootViewControllerAnimated(true)
+        }
+        
+    }
+    
+    deinit
+    {
+        println("MYOA ViewController deallocatd")
+    }
+}
